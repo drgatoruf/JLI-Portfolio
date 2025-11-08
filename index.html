@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jianwei's Portfolio</title>
+  <style>
+    :root {
+      --bg: #f6f6f6;
+      --text: #333;
+      --card-bg: #ffffff;
+      --header-bg: #1B2D2A;
+      --header-text: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    .dark {
+      --bg: #121212;
+      --text: #e5e5e5;
+      --card-bg: #1e1e1e;
+      --header-bg: #000000;
+      --header-text: #ffffff;
+      --shadow: rgba(255, 255, 255, 0.06);
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background: var(--card-bg);
+      color: var(--text);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px var(--shadow);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .projects {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+
+    .project {
+      background: var(--card-bg);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px var(--shadow);
+      transition: background 0.3s;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--header-bg);
+      color: var(--header-text);
+      margin-top: 3rem;
+      transition: background 0.3s, color 0.3s;
+    }
+      /* Custom color palette */
+    :root {
+      --primary: #6a5acd;
+      --secondary: #ffb347;
+      --accent: #4ecdc4;
+    }
+
+    /* Toggle animation */
+    .toggle-btn {
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+    }
+
+    .toggle-btn:active {
+      transform: scale(0.92);
+    }
+
+    /* Smooth theme transition */
+    body, header, footer, .project {
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jianwei's Portfolio</h1>
+  <p>Showcasing my projects, creativity, and work</p>
+  <button class="toggle-btn" onclick="toggleTheme()">Dark/Light</button>
+</header>
+
+<section class="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <img src="images/Project01.jpg" alt="Project 1" />
+    <h3>Project 1</h3>
+    <p>
+      Customer Distribution of Bank ABC in the UK.
+      <a href="images/Project01.jpg" target="_blank">View separately</a>
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="images/Project02.jpg" alt="Project 2" />
+    <h3>Project 2</h3>
+    <p>
+      Monthly Unemployment in Different Age Groups.
+      <a href="images/Project02.jpg" target="_blank">View separately</a>
+    </p>
+  </div>
+
+  <div class="project">
+    <img src="images/Project03.jpg" alt="Project 3" />
+    <h3>Project 3</h3>
+    <p>
+      Profit Distribution in Europe and Relationship of Profit and Sales.
+      <a href="images/Project03.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+
+  <div class="project">
+    <img src="images/Project04.jpg" alt="Project 4" />
+    <h3>Project 4</h3>
+    <p>
+      Airline Revenue Comparison.
+      <a href="images/Project04.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+
+  <div class="project">
+    <img src="images/Project05.jpg" alt="Project 5" />
+    <h3>Project 5</h3>
+    <p>
+      Sales Performance Evaluation.
+      <a href="images/Project05.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+
+  <div class="project">
+    <img src="images/Project06.jpg" alt="Project 6" />
+    <h3>Project 6</h3>
+    <p>
+      Sales Summary and Profit Analysis.
+      <a href="images/Project06.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+
+  <div class="project">
+    <img src="images/Project07.jpg" alt="Project 7" />
+    <h3>Project 7</h3>
+    <p>
+      Worldwide Car Sales.
+      <a href="images/Project07.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+
+  <div class="project">
+    <img src="images/Project08.jpg" alt="Project 8" />
+    <h3>Project 8</h3>
+    <p>
+      Region Comparison and Decision on Expansion.
+      <a href="images/Project08.jpg" target="_blank">View separately</a>
+    </p>
+  </div>  
+ 
+  <div class="project">
+    <img src="images/Project09.jpg" alt="Project 9" />
+    <h3>Project 9</h3>
+    <p>
+      Annual Salary Distribution in NY City.
+      <a href="images/Project09.jpg" target="_blank">View separately</a>
+    </p>
+  </div>   
+  
+</section>
+
+<footer>
+  <p>© 2025 JIANWEI LI — Built with GitHub</p>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark');
+
+    // Apply accent pulse animation on toggle
+    const btn = document.querySelector('.toggle-btn');
+    btn.animate([
+      { transform: 'scale(1)', background: 'var(--accent)' },
+      { transform: 'scale(1.15)', background: 'var(--secondary)' },
+      { transform: 'scale(1)', background: 'var(--card-bg)' }
+    ], {
+      duration: 450,
+      easing: 'ease-out'
+    });
+  }
+</script>
+
+</body>
+</html>
